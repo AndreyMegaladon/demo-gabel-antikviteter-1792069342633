@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabel Antikviteter - Om oss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F4F1EA] text-[#222222] font-sans antialiased">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-[#222222]">Gabel Antikviteter</a>
+            <div class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hjem</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Utvalg</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt oss</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Finn oss</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-200 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:underline">Hjem</a> > <span>Om oss</span>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8">Om Gabel Antikviteter</h1>
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 space-y-6 text-lg text-gray-700">
+            <p>Gabel Antikviteter er en sjarmerende antikvitetsforretning som tidligere holdt til i hyggelige lokaler i Bygdøy allé 33 med inngang fra Gabels gate i Oslo. Butikklokalet der er nå nedlagt, og virksomheten drives videre med lager i Bærum, hvor varer kan sendes, hentes eller leveres etter avtale i østlandsområdet.</p>
+            <p>Her finner du fine, gamle ting og interiørartikler med sjel og sjarm fra forskjellige tidsepoker, både fra by og land. Det er et perfekt sted for å finne en spesiell gave, vakre antikke glass eller klassisk kongelig dansk porselen som Royal Copenhagen (musselmalt porselen).</p>
+            <p>Du kan enkelt ta kontakt på telefon alle dager for en hyggelig handel, forespørsler om varer eller avtale om henting og levering. Vi tilbyr gratis frakt ved kjøp over kr 1000.</p>
+
+            <div class="border-t border-gray-200 pt-8 mt-8">
+                <h2 class="text-2xl font-bold mb-4 text-[#222222]">Viktige punkter</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Fysisk butikklokale i Bygdøy allé er nedlagt, drives nå fra lager i Bærum med mulighet for henting, sending og levering i østlandsområdet.</li>
+                    <li>Spesialisert på klassisk kongelig dansk porselen (Royal Copenhagen) og antikke glass.</li>
+                    <li>Gratis frakt ved kjøp over kr 1000.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Gabel Antikviteter</h3>
+                <p class="text-sm text-gray-400">Lager i Bærum (tidligere Bygdøy allé 33, Oslo).</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-gray-400 mb-2">Telefon: +47 918 43 123</p>
+                <p class="text-sm text-gray-400">E-post: post@gabelantikviteter.no</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Åpningstider</h3>
+                <p class="text-sm text-gray-400">Kontakt alle dager på telefon. Varer sendes eller hentes etter avtale.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
