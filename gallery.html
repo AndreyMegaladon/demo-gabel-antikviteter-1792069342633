@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabel Antikviteter - Galleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F4F1EA] text-[#222222] font-sans antialiased">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-[#222222]">Gabel Antikviteter</a>
+            <div class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hjem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Utvalg</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt oss</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Finn oss</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-white border-b border-gray-200 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-gray-500">
+            <a href="index.html" class="hover:underline">Hjem</a> > <span>Galleri</span>
+        </div>
+    </div>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Bildegalleri</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Et innblikk i vår verden av antikviteter, porselen og sjarmerende interiørgjenstander.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Galleri 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Galleri 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80" alt="Galleri 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Galleri 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=800&q=80" alt="Galleri 5" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Galleri 6" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Gabel Antikviteter</h3>
+                <p class="text-sm text-gray-400">Lager i Bærum (tidligere Bygdøy allé 33, Oslo).</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-gray-400 mb-2">Telefon: +47 918 43 123</p>
+                <p class="text-sm text-gray-400">E-post: post@gabelantikviteter.no</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Åpningstider</h3>
+                <p class="text-sm text-gray-400">Kontakt alle dager på telefon. Varer sendes eller hentes etter avtale.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
